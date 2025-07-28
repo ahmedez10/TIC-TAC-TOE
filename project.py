@@ -22,7 +22,7 @@ def playerinput(board):
 #chaek for win or tie
 def chaekhorizontle(board):
     global winner
-    if board[0]==board==[1]==board[2]and board[0]!="-":
+    if board[0]==board[1]==board[2]and board[0]!="-":
         winner=board[0]
         return True
     elif board[3]==board[4]==board[5]and board[3]!="-":
@@ -34,7 +34,7 @@ def chaekhorizontle(board):
 
 def  checkrow(board):
     global winner
-    if board[0]==board==[3]==board[6]and board[0]!="-":
+    if board[0]==board[3]==board[6]and board[0]!="-":
         winner=board[0]
         return True
     elif board[1]==board[4]==board[7]and board[1]!="-":
@@ -46,7 +46,7 @@ def  checkrow(board):
     
 def checkdiag(board):
      global winner
-     if board[0]==board==[4]==board[8]and board[0]!="-":
+     if board[0]==board[4]==board[8]and board[0]!="-":
         winner=board[0]
         return True
      elif board[2]==board[4]==board[6]and board[2]!="-":
